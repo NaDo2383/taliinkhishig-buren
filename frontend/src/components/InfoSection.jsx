@@ -53,10 +53,10 @@ function InfoSection() {
         >
           {infos.map((info, i) => (
             <SwiperSlide key={i} className="pt-16 pb-20">
-              <div className="rounded-xl border overflow-hidden shadow-sm hover:shadow-lg">
+              <div className="rounded-xl border overflow-hidden shadow-sm hover:shadow-lg cardContainer">
                 <img
                   src={info.photo}
-                  className="w-full h-[170px] object-cover"
+                  className="w-full h-[170px] object-cover cardImg"
                   alt=""
                 />
                 <div className=" p-5">
