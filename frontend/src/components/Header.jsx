@@ -79,7 +79,7 @@ function Header({ title, description, bgImage, height }) {
                 {/* <!-- navbar start --> */}
                 <nav className="lg:container shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20 max-w-screen-xl">
                     <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px] border-b bottom-1">
-                        {isAdmin && (
+                        {/* {isAdmin && (
                             <Link
                                 to="/admin/dashboard"
                                 className="text-white mr-10"
@@ -105,7 +105,7 @@ function Header({ title, description, bgImage, height }) {
                             <Link to="/register" className="text-white mr-10">
                                 Бүртгүүлэх
                             </Link>
-                        )}
+                        )} */}
 
                         <div className="language-option-wrapper flex items-center">
                             <p className="text-white pr-2">English</p>
