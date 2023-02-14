@@ -63,7 +63,7 @@ function ProjectSection() {
                                     spaceBetween: 20,
                                 },
                                 1536: {
-                                    slidesPerView: 2,
+                                    slidesPerView: 3,
                                     spaceBetween: 20,
                                 },
                             }}
