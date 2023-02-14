@@ -128,7 +128,7 @@ function Header({ title, description, bgImage, height }) {
             /> */}
                     </div>
                     <div className=" px-4 z-50 bg-white md:bg-transparent flex justify-between items-center md:h-[100px] h-[60px] px-[50px]">
-                        <div className="flex items-center justify-between w-full">
+                        <div className="flex items-center justify-between ">
                             <Link to="/" className=" flex items-center">
                                 <img
                                     src="/images/logo1.png"

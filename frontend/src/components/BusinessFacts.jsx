@@ -19,7 +19,7 @@ function BusinessFacts() {
                             <p className="mb-2">Deals closed</p>
                             <img
                                 src="/businessFactsIcons/deals.png"
-                                className="w-20 h-16"
+                                className="w-15 h-11"
                             />
                         </li>
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
@@ -27,7 +27,7 @@ function BusinessFacts() {
                             <p className="mb-2">Projects</p>
                             <img
                                 src="/businessFactsIcons/project.png"
-                                className="w-20 h-16"
+                                className="w-15 h-11"
                             />
                         </li>
                     </div>
@@ -37,7 +37,7 @@ function BusinessFacts() {
                             <p className="mb-2">Tons transported</p>
                             <img
                                 src="/businessFactsIcons/settings.png"
-                                className="w-20 h-16"
+                                className="w-15 h-11"
                             />
                         </li>
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[200px] flex-[1]">
@@ -45,7 +45,7 @@ function BusinessFacts() {
                             <p className="mb-2">Employees</p>
                             <img
                                 src="/businessFactsIcons/employee.png"
-                                className="w-20 h-16"
+                                className="w-15 h-11"
                             />
                         </li>
                     </div>
