@@ -71,6 +71,7 @@
     right: 60px;
     cursor: pointer;
     transition: all;
+    z-index: 999;
 }
 
 #goTopButton:hover {
