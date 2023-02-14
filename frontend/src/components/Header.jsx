@@ -77,9 +77,11 @@ function Header({ title, description, bgImage, height }) {
                 }`}
             >
                 {/* <!-- navbar start --> */}
+
                 <nav className="lg:container shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20 max-w-screen-xl">
-                    <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px] border-b bottom-1">
-                        {/* {isAdmin && (
+                    <div className="border-b bottom-1 w-full">
+                        <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px] border-b bottom-1">
+                            {/* {isAdmin && (
                             <Link
                                 to="/admin/dashboard"
                                 className="text-white mr-10"
@@ -107,11 +109,11 @@ function Header({ title, description, bgImage, height }) {
                             </Link>
                         )} */}
 
-                        <div className="language-option-wrapper flex items-center">
-                            <p className="text-white pr-2">English</p>
-                            <FiChevronDown className="text-white text-[19px]" />
-                        </div>
-                        {/* <Select
+                            <div className="language-option-wrapper flex items-center">
+                                <p className="text-white pr-2">English</p>
+                                <FiChevronDown className="text-white text-[19px]" />
+                            </div>
+                            {/* <Select
               defaultValue="eng"
               style={{ width: 120 }}
               // onChange={handleChange}
@@ -126,6 +128,7 @@ function Header({ title, description, bgImage, height }) {
                 },
               ]}
             /> */}
+                        </div>
                     </div>
                     <div className=" px-4 z-50 bg-white md:bg-transparent flex justify-between items-center md:h-[100px] h-[60px] px-[50px]">
                         <div className="flex items-center justify-between ">
@@ -179,7 +182,7 @@ function Header({ title, description, bgImage, height }) {
                             </div>
                         </div>
                         <ul
-                            className={`bg-black/80 duration-300 ease-out md:h-auto overflow-hidden top-[60px] md:bg-transparent text-center md:flex justify-between items-center w-full fixed md:static left-0 ${
+                            className={`bg-black/80 duration-300 ease-out md:h-auto overflow-hidden top-[60px] md:bg-transparent text-center md:flex justify-between items-center gap-x-6 fixed md:static left-0 ${
                                 open
                                     ? "h-full min-h-screen overflow-y-scroll"
                                     : "h-0"
