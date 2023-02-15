@@ -26,13 +26,13 @@ const partners = [
     {
         _id: 4,
         name: "abc",
-        logo: "./partnersLogo/mtz.png",
+        logo: "http://taliinkhishig.mn/images/mtz.png?fbclid=IwAR2KZnxjjMsRsHXNNLZr1DuR9LnAhQCiciW6eC5e6ddcr9rSld2zlRBl3hQ",
         class: "sm:h-[70px] justify-center flex",
     },
     {
         _id: 5,
         name: "abc",
-        logo: "./partnersLogo/tavantolgoi.png",
+        logo: "http://taliinkhishig.mn/images/tavantolgoi.png",
         class: "sm:h-[70px] justify-center flex",
     },
 ];
