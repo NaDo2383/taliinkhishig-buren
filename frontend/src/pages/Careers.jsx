@@ -51,7 +51,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full ">
                                 <img
-                                    src="../pics/zu1.jpg"
+                                    src="http://taliinkhishig.mn/images/105.jpg?fbclid=IwAR2dVn2-DnbW_Wvsus6a6VIAlSfAYDBo3lalP2yfGAfIAJNcB6jvYf0n0U4"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                     alt=""
                                 />
@@ -80,7 +80,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full ">
                                 <img
-                                    src="../pics/zu2.jpg"
+                                    src="http://taliinkhishig.mn/images/104.jpg?fbclid=IwAR1p7lozDrQcoInk8g6xZJ3ZpP2wOpEqJfPolNi8v3gKmcgkO0W1j7-h5aQ"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                 />
                             </div>
@@ -106,7 +106,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full ">
                                 <img
-                                    src="../pics/zu3.jpg"
+                                    src="http://taliinkhishig.mn/images/100.jpg?fbclid=IwAR0AzDs9dhpNJi5wANllBMtmaF559ofb9yjuMUT2Q-wwB_3k2gPO8x-KwME"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                 />
                             </div>
@@ -134,7 +134,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full ">
                                 <img
-                                    src="../pics/zu4.jpg"
+                                    src="http://taliinkhishig.mn/images/101.jpg?fbclid=IwAR1PJUPI08r3ZkcB5g9JHO-sCT4gMcJvWeT8F-_l2dmtGIk89HYjH8QzuXc"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                 />
                             </div>
@@ -163,7 +163,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full ">
                                 <img
-                                    src="../pics/zu5.jpg"
+                                    src="http://taliinkhishig.mn/images/102.jpg?fbclid=IwAR3t6CP_64lrm9qV_OybA0ukQopLaVpT6EHEaYSHtc_nY5fJnn86xgQuEgA"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                 />
                             </div>
@@ -191,7 +191,7 @@ export default function Careers() {
                         >
                             <div className="w-1/2 overflow-hidden h-full">
                                 <img
-                                    src="../pics/zu6.jpg"
+                                    src="http://taliinkhishig.mn/images/103.jpg?fbclid=IwAR1MNbirkn_5O4ocQVcGtnkHVm3XitB3DkUJI89CSgQduB5pGPRk4HdgPNQ"
                                     className="hover:scale-105 transition duration-1000 h-full object-cover w-[95%]"
                                 />
                             </div>
