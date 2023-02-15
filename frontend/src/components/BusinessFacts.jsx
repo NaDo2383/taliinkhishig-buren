@@ -1,6 +1,26 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 
 function BusinessFacts() {
+    function Number({ n }) {
+        const { number } = useSpring({
+            from: { number: 0 },
+            number: n,
+            delay: 1000,
+            config: { mass: 1, tension: 20, friction: 10 },
+        });
+        return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+    }
+    function Number1({ n }) {
+        const { number } = useSpring({
+            from: { number: 0 },
+            number: n,
+            delay: 1000,
+            config: { mass: 0.1, tension: 20, friction: 10 },
+        });
+        return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+    }
+
     return (
         <div className="md:container md:mx-auto px-5 py-10">
             <div className="flex justify-center flex-col items-center">
@@ -15,7 +35,9 @@ function BusinessFacts() {
                 <ul className="flex lg:flex-row flex-col gap-5 justify-center ">
                     <div className="flex gap-x-5">
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
-                            <p className="text-2xl mb-1 font-bold">870</p>
+                            <p className="text-2xl mb-1 font-bold">
+                                <Number n={870} />
+                            </p>
                             <p className="mb-2">Deals closed</p>
                             <img
                                 src="/businessFactsIcons/deals.png"
@@ -23,7 +45,9 @@ function BusinessFacts() {
                             />
                         </li>
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
-                            <p className="text-2xl mb-1 font-bold">5+</p>
+                            <p className="text-2xl mb-1 font-bold flex">
+                                <Number n={5} />+
+                            </p>
                             <p className="mb-2">Projects</p>
                             <img
                                 src="/businessFactsIcons/project.png"
@@ -33,7 +57,9 @@ function BusinessFacts() {
                     </div>
                     <div className="flex gap-x-5">
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[220px] flex-[1]">
-                            <p className="text-2xl mb-1 font-bold">1.7m</p>
+                            <p className="text-2xl mb-1 font-bold flex">
+                                <Number1 n={1700} />k
+                            </p>
                             <p className="mb-2">Tons transported</p>
                             <img
                                 src="/businessFactsIcons/settings.png"
@@ -41,7 +67,9 @@ function BusinessFacts() {
                             />
                         </li>
                         <li className="bg-white shadow-sm rounded-xl p-5 sm:p-10 flex justify-center items-center flex-col text-center md:w-[200px] flex-[1]">
-                            <p className="text-2xl mb-1 font-bold">200+</p>
+                            <p className="text-2xl mb-1 font-bold flex">
+                                <Number n={200} />+
+                            </p>
                             <p className="mb-2">Employees</p>
                             <img
                                 src="/businessFactsIcons/employee.png"
