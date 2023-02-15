@@ -80,7 +80,11 @@ function App() {
         // },
         {
             path: "/admin",
-            element: <AdminLayout />,
+            element: (
+                <ProtectedRoute>
+                    <AdminLayout />
+                </ProtectedRoute>
+            ),
 
             children: [
                 {
