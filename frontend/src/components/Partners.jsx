@@ -23,6 +23,18 @@ const partners = [
         logo: "/partnersLogo/lfbcdz8ulzu3ahd3cwjv 10.png",
         class: "sm:h-[70px] justify-center flex",
     },
+    {
+        _id: 4,
+        name: "abc",
+        logo: "/partnersLogo/mtz.png",
+        class: "sm:h-[70px] justify-center flex",
+    },
+    {
+        _id: 5,
+        name: "abc",
+        logo: "../partnerslogo/tavantolgoi.png",
+        class: "sm:h-[70px] justify-center flex",
+    },
 ];
 
 function Partners() {

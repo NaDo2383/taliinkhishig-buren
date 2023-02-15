@@ -63,27 +63,25 @@ function App() {
                     path: "/projects/:id",
                     element: <ProjectScreen />,
                 },
+                {
+                    path: "/news",
+                    element: <News />,
+                },
+                {
+                    path: "/news/:id",
+                    element: <NewsScreen />,
+                },
             ],
         },
-        {
-            path: "/news",
-            element: <News />,
-        },
-        {
-            path: "/news/:id",
-            element: <NewsScreen />,
-        },
+
         // {
         //   path: "/projects/:id",
         //   element: <ProjectScreen />,
         // },
         {
             path: "/admin",
-            element: (
-                <ProtectedRoute>
-                    <AdminLayout />
-                </ProtectedRoute>
-            ),
+            element: <AdminLayout />,
+
             children: [
                 {
                     path: "dashboard",
