@@ -69,7 +69,7 @@ export default function News() {
                     </div>
                 </Container>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }

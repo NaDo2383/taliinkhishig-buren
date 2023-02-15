@@ -42,7 +42,7 @@ function Partners() {
         <Container bgColor={"#fff"}>
             <div>
                 <div className="flex items-center flex-col pt-8">
-                    <p className="text-xl font-semibold mb-5">Partners</p>
+                    <p className="text-3xl font-semibold mb-5">Partners</p>
                 </div>
                 <div className="w-full overflow-hidden py-10 px-5 flex justify-center">
                     <Swiper
@@ -85,11 +85,11 @@ function Partners() {
                         ))}
                     </Swiper>
                 </div>
-                <div className="flex items-center flex-col pb-8">
+                {/* <div className="flex items-center flex-col pb-8">
                     <p className="py-2 px-4 rounded-lg bg-orange-400/40 text-center text-[#FE7200]">
                         Working with us?
                     </p>
-                </div>
+                </div> */}
             </div>
         </Container>
     );

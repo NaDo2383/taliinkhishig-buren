@@ -41,8 +41,8 @@ function Footer() {
                                                 to="#"
                                                 className="hover:underline"
                                             >
-                                                (+976) 7718-1188 Mail:
-                                                tkh.mining@gmail.com
+                                                (+976) 7718-1188 <br />{" "}
+                                                Mail:tkh.mining@gmail.com
                                             </Link>
                                         </li>
                                     </ul>
@@ -65,15 +65,17 @@ function Footer() {
                                                 to="#"
                                                 className="hover:underline "
                                             >
-                                                Sukhbaatar district, Ulaanbaatar
-                                                city Mongolia, Shangri-La office
-                                                Level 11 Room 1110
+                                                Sukhbaatar district, <br />{" "}
+                                                Ulaanbaatar city Mongolia,
+                                                <br />
+                                                Shangri-La office Level 11{" "}
+                                                <br /> Room 1110
                                             </Link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="">
+                            <div className="border-l pl-12 left-2">
                                 <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                                     Contact us
                                 </h2>
@@ -81,7 +83,7 @@ function Footer() {
                                     <label>Email*</label>
                                     <input
                                         type="text"
-                                        className="outline-none rounded-md p-1 mb-3"
+                                        className="outline-none rounded-md text-black p-1 mb-3"
                                     />
                                     <label>Message</label>
                                     <textarea
@@ -89,7 +91,7 @@ function Footer() {
                                         id=""
                                         cols="30"
                                         rows="3"
-                                        className="rounded-md outline-none p-1 mb-5"
+                                        className="rounded-md outline-none text-black p-1 mb-5"
                                     ></textarea>
                                     <button className="border-[#FE7200] mx-auto md:mx-0 text-white bg-[#FE7200] border-2 rounded-lg w-fit py-1 px-10">
                                         Submit
@@ -104,11 +106,9 @@ function Footer() {
                             All rights reserved by ‘Taliin Khishig Mining LLC’
                             2023
                         </span>
-                        <a href="https://www.gss.mn/">
-                            <span className="text-sm sm:text-center text-gray-400">
-                                Developed by Global Smart Systems LLC,
-                            </span>
-                        </a>
+                        <span className="text-sm sm:text-center text-gray-400">
+                            Developed by Global Smart Systems LLC,
+                        </span>
                     </div>
                 </div>
             </Container>

@@ -23,9 +23,6 @@ import AddProject from "./pages/admin/AddProject";
 import EditProject from "./pages/admin/EditProject";
 import EditNews from "./pages/admin/EditNews";
 import RegisterAdmin from "./pages/admin/RegisterAdmin";
-import Register from "./pages/Register";
-import Careers from "./pages/Careers";
-import ApplyForm from "./pages/ApplyForm";
 
 function App() {
     const router = createBrowserRouter([
@@ -73,14 +70,6 @@ function App() {
                     path: "/news/:id",
                     element: <NewsScreen />,
                 },
-                {
-                    path: "/careers",
-                    element: <Careers />,
-                },
-                {
-                    path: "/apply",
-                    element: <ApplyForm />,
-                },
             ],
         },
 
@@ -126,10 +115,6 @@ function App() {
         {
             path: "/login",
             element: <Login />,
-        },
-        {
-            path: "/register",
-            element: <Register />,
         },
     ]);
     return <RouterProvider router={router} />;

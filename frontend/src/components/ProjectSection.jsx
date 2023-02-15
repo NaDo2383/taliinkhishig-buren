@@ -9,6 +9,7 @@ import SkeletonCard from "./SkeletonCard";
 import { Alert } from "antd";
 import catchResponseErr from "../utils/catchResponseErr";
 import Container from "./Container";
+import { Link } from "react-router-dom";
 
 // const project = {
 //   title: "Working with us",
@@ -35,9 +36,12 @@ function ProjectSection() {
                             <p className="text-xl font-semibold mb-5">
                                 Our project
                             </p>
-                            <p className="py-2 px-5 rounded-lg bg-orange-400/40 text-center text-[#FE7200]">
+                            <Link
+                                to="/about-us"
+                                className="py-2 px-5 rounded-lg bg-orange-400/40 text-center text-[#FE7200]"
+                            >
                                 Why us?
-                            </p>
+                            </Link>
                         </div>
                     </div>
 

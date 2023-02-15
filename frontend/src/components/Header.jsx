@@ -78,7 +78,7 @@ function Header({ title, description, bgImage, height }) {
             >
                 {/* <!-- navbar start --> */}
 
-                <nav className="lg:container-fluid shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20">
+                <nav className="lg:container-fluid shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20 ">
                     <div className="border-b bottom-1 flex justify-center">
                         <div className="lg:container w-full max-w-screen-xl ">
                             <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px]">
@@ -139,7 +139,7 @@ function Header({ title, description, bgImage, height }) {
                                     <img
                                         src="/images/logo1.png"
                                         alt="logo"
-                                        className="logo w-12 md:w-20 hover:rotate-45 transition-all duration-1000"
+                                        className="logo w-12 md:w-20 transition-all duration-1000"
                                     />
                                     <h2 className="logo-title hidden md:text-white font-semibold md:block">
                                         TALIIN KHISHIG MINING
@@ -192,18 +192,14 @@ function Header({ title, description, bgImage, height }) {
                                         : "h-0 hidden"
                                 }`}
                             >
-                                <Dropdown
-                                    menu={{
-                                        items: about,
-                                    }}
-                                    placement="bottom"
-                                    arrow
-                                >
-                                    <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                        <div className="text-white">About</div>
-                                        <FiChevronDown className="text-white text-[19px]" />
-                                    </li>
-                                </Dropdown>
+                                <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <Link
+                                        to="/about-us"
+                                        className=" text-white"
+                                    >
+                                        About Us
+                                    </Link>
+                                </li>
 
                                 <Dropdown
                                     menu={{
@@ -212,7 +208,7 @@ function Header({ title, description, bgImage, height }) {
                                     placement="bottom"
                                     arrow
                                 >
-                                    <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900] bg-grey-500/50">
                                         <div className="text-white">
                                             Service
                                         </div>
@@ -229,7 +225,7 @@ function Header({ title, description, bgImage, height }) {
                                     </a>
                                 </li>
                                 <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                    <Link to="/career" className=" text-white">
+                                    <Link to="/careers" className=" text-white">
                                         Careers
                                     </Link>
                                 </li>

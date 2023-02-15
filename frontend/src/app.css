@@ -78,3 +78,97 @@
     background-color: rgb(254, 114, 0);
     color: white;
 }
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.scale-up-top {
+    animation: myAnim 1s ease 0.5s 1 normal backwards;
+}
+
+@keyframes myAnim1 {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.scale-from-right {
+    animation: myAnim1 1s ease 1s 1 normal backwards;
+}
+
+@keyframes myAnim2 {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scale-from-bottom {
+    animation: myAnim2 1s ease 1s 1 normal backwards;
+}
+
+@keyframes myAnim3 {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.scale-from-left {
+    animation: myAnim3 1s ease 1s 1 normal backwards;
+}
+
+@keyframes subImg {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.scale-from-right-sum-img {
+    animation: subImg 1s ease 5s 1 normal backwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.scale-from-back-sum-text {
+    animation: myAnim 1s ease 5s 1 normal backwards;
+}

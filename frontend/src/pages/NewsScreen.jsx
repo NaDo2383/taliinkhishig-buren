@@ -92,7 +92,6 @@ function NewsScreen() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

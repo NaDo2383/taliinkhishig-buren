@@ -11,18 +11,18 @@ import Subscribe from "../components/Subscribe";
 import "swiper/css";
 
 function Home() {
-  return (
-    <div>
-      <Services />
-      <InfoSection />
-      <Greeting />
-      <ProjectSection />
-      <BusinessFacts />
-      <Partners />
-      <NewsSection />
-      <Subscribe />
-    </div>
-  );
+    return (
+        <div>
+            <Services />
+            {/* <InfoSection /> */}
+            <Greeting />
+            <ProjectSection />
+            <BusinessFacts />
+            <Partners />
+            <NewsSection />
+            <Subscribe />
+        </div>
+    );
 }
 
 export default Home;

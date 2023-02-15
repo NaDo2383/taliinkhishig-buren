@@ -33,7 +33,7 @@ function Login() {
   const navigate = useNavigate();
   useEffect(() => {
     const checkUser = () => {
-      currentUser && navigate("/");
+      currentUser && navigate("/admin");
     };
     checkUser();
   }, [currentUser]);
@@ -107,14 +107,6 @@ function Login() {
             </Spin>
           </div>
         </form>
-        <div className="flex justify-end">
-          <Link
-            to={"/register"}
-            className="text-slate-500 py-3 hover:underline"
-          >
-            Бүртгүүлэх
-          </Link>
-        </div>
       </div>
     </div>
   );
