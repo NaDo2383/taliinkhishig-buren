@@ -26,13 +26,13 @@ const partners = [
     {
         _id: 4,
         name: "abc",
-        logo: "./dist/partnersLogo/mtz.png",
+        logo: "./partnersLogo/mtz.png",
         class: "sm:h-[70px] justify-center flex",
     },
     {
         _id: 5,
         name: "abc",
-        logo: "./dist/partnersLogo/tavantolgoi.png",
+        logo: "./partnersLogo/tavantolgoi.png",
         class: "sm:h-[70px] justify-center flex",
     },
 ];
