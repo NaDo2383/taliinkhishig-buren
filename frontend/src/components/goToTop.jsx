@@ -24,7 +24,7 @@ export default function GoToTop() {
             id="goTopButtonContainer"
             style={{ display: showTopBtn ? "block" : "none" }}
         >
-            <div id="goTopButton">↑</div>
+            <i class="fa fa-angle-up text-[40px]" aria-hidden="true"></i>
         </div>
     );
 }

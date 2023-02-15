@@ -57,13 +57,13 @@
     transform: scale(1.1);
 }
 
-#goTopButton {
+#goTopButtonContainer {
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
     background-color: white;
     box-shadow: 3px 3px 3px grey;
     position: fixed;
@@ -74,7 +74,7 @@
     z-index: 999;
 }
 
-#goTopButton:hover {
+#goTopButtonContainer:hover {
     background-color: rgb(254, 114, 0);
     color: white;
 }
@@ -92,7 +92,7 @@
 }
 
 .scale-up-top {
-    animation: myAnim 1s ease 0.5s 1 normal backwards;
+    animation: myAnim 1.5s ease 1s 1 normal backwards;
 }
 
 @keyframes myAnim1 {
@@ -108,7 +108,7 @@
 }
 
 .scale-from-right {
-    animation: myAnim1 1s ease 1s 1 normal backwards;
+    animation: myAnim1 1.5s ease 2s 1 normal backwards;
 }
 
 @keyframes myAnim2 {
@@ -124,7 +124,7 @@
 }
 
 .scale-from-bottom {
-    animation: myAnim2 1s ease 1s 1 normal backwards;
+    animation: myAnim2 1.5s ease 2s 1 normal backwards;
 }
 
 @keyframes myAnim3 {
@@ -140,7 +140,7 @@
 }
 
 .scale-from-left {
-    animation: myAnim3 1s ease 1s 1 normal backwards;
+    animation: myAnim3 1.5s ease 2s 1 normal backwards;
 }
 
 @keyframes subImg {
@@ -156,7 +156,7 @@
 }
 
 .scale-from-right-sum-img {
-    animation: subImg 1s ease 5s 1 normal backwards;
+    animation: subImg 1.5s ease 6s 1 normal backwards;
 }
 
 @keyframes myAnim {
@@ -170,5 +170,5 @@
 }
 
 .scale-from-back-sum-text {
-    animation: myAnim 1s ease 5s 1 normal backwards;
+    animation: myAnim 1.5s ease 6s 1 normal backwards;
 }

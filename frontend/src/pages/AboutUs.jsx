@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Container from "../components/Container";
 import Heading from "../components/Heading";
 
 function AboutUs() {
@@ -12,13 +13,15 @@ function AboutUs() {
 
     return (
         <div>
-            <Heading
-                title={"About us"}
-                subTitle="Tal Hishig Mining LLC was established in 2017 with the
+            <Container>
+                <Heading
+                    title={"About us"}
+                    subTitle="Tal Hishig Mining LLC was established in 2017 with the
                 investment of MU and China, and it has been operating for the
                 second year."
-                img={"/serviceImages/digital-10 1.png"}
-            />
+                    img={"/serviceImages/digital-10 1.png"}
+                />
+            </Container>
             {/* <!-- main-section start --> */}
             <div className="container max-w-[1100px] px-5 md:px-20 mb-20 mx-auto">
                 <div>
