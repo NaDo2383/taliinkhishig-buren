@@ -239,7 +239,7 @@ function Header({ title, description, bgImage, height }) {
                                     </Link>
                                 </li>
                                 <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                    <a to="#footer" className=" text-white">
+                                    <a href="#footer" className=" text-white">
                                         Contact us
                                     </a>
                                 </li>
