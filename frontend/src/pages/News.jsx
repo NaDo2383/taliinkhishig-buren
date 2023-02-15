@@ -18,7 +18,6 @@ export default function News() {
 
     const allNews = data?.data;
     const pagination = data?.pagination;
-    console.log(data.pagination);
     useEffect(() => {
         // 👇️ scroll to top on
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

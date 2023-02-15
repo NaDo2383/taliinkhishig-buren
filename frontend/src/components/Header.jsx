@@ -78,10 +78,11 @@ function Header({ title, description, bgImage, height }) {
             >
                 {/* <!-- navbar start --> */}
 
-                <nav className="lg:container shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20 max-w-screen-xl">
-                    <div className="border-b bottom-1 w-full">
-                        <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px] border-b bottom-1">
-                            {/* {isAdmin && (
+                <nav className="lg:container-fluid shadow-md block mx-auto fixed top-0 w-full md:static md:shadow-none z-20">
+                    <div className="border-b bottom-1 flex justify-center">
+                        <div className="lg:container w-full max-w-screen-xl ">
+                            <div className="nav-row-1 md:flex justify-end items-center hidden h-[50px]">
+                                {/* {isAdmin && (
                             <Link
                                 to="/admin/dashboard"
                                 className="text-white mr-10"
@@ -109,11 +110,11 @@ function Header({ title, description, bgImage, height }) {
                             </Link>
                         )} */}
 
-                            <div className="language-option-wrapper flex items-center">
-                                <p className="text-white pr-2">English</p>
-                                <FiChevronDown className="text-white text-[19px]" />
-                            </div>
-                            {/* <Select
+                                <div className="language-option-wrapper flex items-center pr-2">
+                                    <p className="text-white">English</p>
+                                    <FiChevronDown className="text-white text-[19px]" />
+                                </div>
+                                {/* <Select
               defaultValue="eng"
               style={{ width: 120 }}
               // onChange={handleChange}
@@ -128,113 +129,122 @@ function Header({ title, description, bgImage, height }) {
                 },
               ]}
             /> */}
-                        </div>
-                    </div>
-                    <div className=" px-4 z-50 bg-white md:bg-transparent flex justify-between items-center md:h-[100px] h-[60px] px-[50px]">
-                        <div className="flex items-center justify-between ">
-                            <Link to="/" className=" flex items-center">
-                                <img
-                                    src="/images/logo1.png"
-                                    alt="logo"
-                                    className="logo w-12 md:w-20 hover:rotate-45 transition-all duration-1000"
-                                />
-                                <h2 className="logo-title hidden md:text-white font-semibold md:block">
-                                    TALIIN KHISHIG MINING
-                                </h2>
-                            </Link>
-                            <div className="flex items-center md:hidden gap-5">
-                                {isAdmin && (
-                                    <Link to="/admin/dashboard">
-                                        <MdOutlineAdminPanelSettings
-                                            size={25}
-                                            className="text-slate-700"
-                                        />
-                                    </Link>
-                                )}
-
-                                {currentUser ? (
-                                    <Popconfirm
-                                        title="Гарах"
-                                        description="Та гарахдаа итгэлтэй байна уу?"
-                                        onConfirm={confirm}
-                                        okText="Тийм"
-                                        placement="bottomRight"
-                                        cancelText="Үгүй"
-                                    >
-                                        <p>
-                                            <FaRegUser
-                                                size={20}
-                                                className="text-slate-700"
-                                            />
-                                        </p>
-                                    </Popconfirm>
-                                ) : (
-                                    <Link
-                                        to="/register"
-                                        className="bg-primary text-white py-1 px-2 rounded-md"
-                                    >
-                                        Бүртгүүлэх
-                                    </Link>
-                                )}
-                                <div onClick={() => setOpen(!open)}>
-                                    <FiMenu className="text-[25px]" />
-                                </div>
                             </div>
                         </div>
-                        <ul
-                            className={`bg-black/80 duration-300 ease-out md:h-auto overflow-hidden top-[60px] md:bg-transparent text-center md:flex justify-between items-center gap-x-6 fixed md:static left-0 ${
-                                open
-                                    ? "h-full min-h-screen overflow-y-scroll"
-                                    : "h-0"
-                            }`}
-                        >
-                            <Dropdown
-                                menu={{
-                                    items: about,
-                                }}
-                                placement="bottom"
-                                arrow
-                            >
-                                <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                    <div className="text-white">About</div>
-                                    <FiChevronDown className="text-white text-[19px]" />
-                                </li>
-                            </Dropdown>
+                    </div>
+                    <div className="flex justify-center">
+                        <div className="lg:container md:relative fixed w-full md:h-[100px] h-[60px] px-[50px] px-4 z-50 max-w-screen-xl bg-white md:bg-transparent flex justify-between items-center">
+                            <div className="flex items-center justify-between w-full ">
+                                <Link to="/" className=" flex items-center">
+                                    <img
+                                        src="/images/logo1.png"
+                                        alt="logo"
+                                        className="logo w-12 md:w-20 hover:rotate-45 transition-all duration-1000"
+                                    />
+                                    <h2 className="logo-title hidden md:text-white font-semibold md:block">
+                                        TALIIN KHISHIG MINING
+                                    </h2>
+                                </Link>
+                                <div className="flex items-center md:hidden gap-5">
+                                    {isAdmin && (
+                                        <Link to="/admin/dashboard">
+                                            <MdOutlineAdminPanelSettings
+                                                size={25}
+                                                className="text-slate-700"
+                                            />
+                                        </Link>
+                                    )}
 
-                            <Dropdown
-                                menu={{
-                                    items: service,
-                                }}
-                                placement="bottom"
-                                arrow
+                                    {currentUser ? (
+                                        <Popconfirm
+                                            title="Гарах"
+                                            description="Та гарахдаа итгэлтэй байна уу?"
+                                            onConfirm={confirm}
+                                            okText="Тийм"
+                                            placement="bottomRight"
+                                            cancelText="Үгүй"
+                                        >
+                                            <p>
+                                                <FaRegUser
+                                                    size={20}
+                                                    className="text-slate-700"
+                                                />
+                                            </p>
+                                        </Popconfirm>
+                                    ) : (
+                                        <></>
+                                        // <Link
+                                        //     to="/register"
+                                        //     className="bg-primary text-white py-1 px-2 rounded-md"
+                                        // >
+                                        //     Бүртгүүлэх
+                                        // </Link>
+                                    )}
+                                    <div onClick={() => setOpen(!open)}>
+                                        <FiMenu className="text-[25px]" />
+                                    </div>
+                                </div>
+                            </div>
+                            <ul
+                                className={`bg-black/80 duration-300 ease-out md:h-auto w-full top-[60px] md:bg-transparent text-center md:flex justify-between items-center gap-x-6 fixed md:static left-0 ${
+                                    open
+                                        ? "h-full w-1/2 min-h-screen"
+                                        : "h-0 hidden"
+                                }`}
                             >
-                                <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                    <div className="text-white">Service</div>
-                                    <FiChevronDown className="text-white text-[19px]" />
-                                </li>
-                            </Dropdown>
+                                <Dropdown
+                                    menu={{
+                                        items: about,
+                                    }}
+                                    placement="bottom"
+                                    arrow
+                                >
+                                    <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                        <div className="text-white">About</div>
+                                        <FiChevronDown className="text-white text-[19px]" />
+                                    </li>
+                                </Dropdown>
 
-                            <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                <Link to="/projects" className=" text-white">
-                                    Project
-                                </Link>
-                            </li>
-                            <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                <Link to="/career" className=" text-white">
-                                    Careers
-                                </Link>
-                            </li>
-                            <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                <Link to="/news" className=" text-white">
-                                    News
-                                </Link>
-                            </li>
-                            <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
-                                <a to="#footer" className=" text-white">
-                                    Contact us
-                                </a>
-                            </li>
-                        </ul>
+                                <Dropdown
+                                    menu={{
+                                        items: service,
+                                    }}
+                                    placement="bottom"
+                                    arrow
+                                >
+                                    <li className="cursor-pointer my-[50px] md:my-0 flex items-center justify-center border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                        <div className="text-white">
+                                            Service
+                                        </div>
+                                        <FiChevronDown className="text-white text-[19px]" />
+                                    </li>
+                                </Dropdown>
+
+                                <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <a
+                                        href="#ourProjectId"
+                                        className=" text-white"
+                                    >
+                                        Project
+                                    </a>
+                                </li>
+                                <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <Link to="/career" className=" text-white">
+                                        Careers
+                                    </Link>
+                                </li>
+                                <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <Link to="/news" className=" text-white">
+                                        News
+                                    </Link>
+                                </li>
+                                <li className="my-[50px] md:my-0 border-y-4 transition-all duration-200 py-1 ease-in border-transparent hover:border-b-[#dd5900]">
+                                    <a to="#footer" className=" text-white">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
                 {/* <!-- navbar end --> */}
