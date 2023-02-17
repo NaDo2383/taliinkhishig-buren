@@ -33,7 +33,7 @@ function ProjectSection() {
                 <div className=" md:grid grid-cols-7 pt-10 md:pt-20 md:pb-12">
                     <div className="flex items-center justify-center 2xl:col-span-1 md:col-span-2">
                         <div className="flex items-center flex-col mb-10">
-                            <p className="text-xl font-semibold mb-5">
+                            <p className="text-3xl font-semibold mb-5">
                                 Our project
                             </p>
                             <Link

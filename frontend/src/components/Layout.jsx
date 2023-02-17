@@ -24,7 +24,7 @@ function Layout() {
     if (ds) {
         return (
             <div className="absolute w-[100%] h-[100vh] p-0  justify-center items-center loading m-0 bg-white flex">
-                <img src="/images/logo1.png" className="animate-spin" />
+                <img src="/images/logo1.png" className="loadingLogo" />
             </div>
         );
     }

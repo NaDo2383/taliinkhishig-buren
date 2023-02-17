@@ -189,3 +189,65 @@
 .tranfortation{
     animation: tranfortation 2s ease 0s 1 normal forwards;
 }
+
+@keyframes Loading {
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+.loadingLogo {
+    animation: Loading 1s ease-in 0s infinite normal forwards;
+}
+
+.actived {
+    color: #fe7300;
+}
+
+@keyframes profileOfTheCompany {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#profileOfTheCompanyHeader {
+    animation: profileOfTheCompany 1s ease 0.5s 1 normal backwards;
+}
+#profileOfTheCompanyP1 {
+    animation: profileOfTheCompany 1s ease 1.5s 1 normal backwards;
+}
+#profileOfTheCompanyP2 {
+    animation: profileOfTheCompany 1s ease 2.5s 1 normal backwards;
+}
+#profileOfTheCompanyP3 {
+    animation: profileOfTheCompany 1s ease 3.5s 1 normal backwards;
+}
+
+@keyframes timeLine {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.timeLine {
+    animation: timeLine 1s ease 0.5s 1 normal backwards;
+}

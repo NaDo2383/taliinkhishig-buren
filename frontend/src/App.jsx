@@ -30,6 +30,10 @@ import DetailShow from "./pages/DetailShow";
 import Transportation from "./components/Tranfortation";
 import Trade from "./components/trade";
 import Mine from "./components/mine";
+import ProfileOfTheCompany from "./components/aboutUs/profileOfTheCompany";
+import TimeLine from "./components/aboutUs/timeLine";
+import Gallery from "./components/aboutUs/gallery";
+
 function App() {
     const router = createBrowserRouter([
         {
@@ -45,8 +49,21 @@ function App() {
                     element: <OurTeam />,
                 },
                 {
-                    path: "/about-us",
                     element: <AboutUs />,
+                    children: [
+                        {
+                            path: "about-us",
+                            element: <ProfileOfTheCompany />,
+                        },
+                        {
+                            path: "timeline",
+                            element: <TimeLine />,
+                        },
+                        {
+                            path: "gallery",
+                            element: <Gallery />,
+                        },
+                    ],
                 },
                 {
                     path: "/service/mining",
