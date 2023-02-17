@@ -172,3 +172,20 @@
 .scale-from-back-sum-text {
     animation: myAnim 1.5s ease 6s 1 normal backwards;
 }
+
+
+@keyframes tranfortation {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.tranfortation{
+    animation: tranfortation 2s ease 0s 1 normal forwards;
+}

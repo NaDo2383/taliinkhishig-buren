@@ -26,7 +26,10 @@ import RegisterAdmin from "./pages/admin/RegisterAdmin";
 import Register from "./pages/Register";
 import Careers from "./pages/Careers";
 import ApplyForm from "./pages/ApplyForm";
-
+import DetailShow from "./pages/DetailShow";
+import Transportation from "./components/Tranfortation";
+import Trade from "./components/trade";
+import Mine from "./components/mine";
 function App() {
     const router = createBrowserRouter([
         {
@@ -81,6 +84,24 @@ function App() {
                     path: "/apply",
                     element: <ApplyForm />,
                 },
+                {
+                    element: <DetailShow/>,
+                    children:[
+                        {
+                            path:"/detail",
+                           element: <Transportation/>
+                        },
+                        {
+                            path:"/trade",
+                            element: <Trade/>
+                        },
+                        {
+                            path: "/mine",
+                            element: <Mine/>
+                        }
+                    ]
+
+                }
             ],
         },
 
