@@ -88,18 +88,21 @@ function Services() {
                         </Link>
                     </li>
                     <li className="flex flex-col justify-between gap-3 mx-10 md:mx-0 py-10 md:py-0 md:px-10 md:my-10 mySpin">
-                        <img
-                            src="/serviceIcons/World.png"
-                            className="w-12 h-12 rounded-full overflow-hidden object-cover p-2 border-2 border-[#FE7200] spinIcon"
-                            alt=""
-                        />
-                        <p className="font-semibold text-lg">Foreign Trade</p>
-                        <p className="text-[15px]">
-                            We work with international partners in Russia and
-                            China. Main activities are rail wagon rentals,sales,
-                            logistic services.
-                        </p>
-
+                        <div className="flex flex-col gap-3">
+                            <img
+                                src="/serviceIcons/World.png"
+                                className="w-12 h-12 rounded-full overflow-hidden object-cover p-2 border-2 border-[#FE7200] spinIcon"
+                                alt=""
+                            />
+                            <p className="font-semibold text-lg">
+                                Foreign Trade
+                            </p>
+                            <p className="text-[15px]">
+                                We work with international partners in Russia
+                                and China. Main activities are rail wagon
+                                rentals,sales, logistic services.
+                            </p>
+                        </div>
                         <Link
                             to="/service/foreign-trade"
                             className="arrowContainer align-bottom hover:pl-3 transition-all duration-200 "

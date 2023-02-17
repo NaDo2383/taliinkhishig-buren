@@ -26,6 +26,9 @@ import RegisterAdmin from "./pages/admin/RegisterAdmin";
 import Register from "./pages/Register";
 import Careers from "./pages/Careers";
 import ApplyForm from "./pages/ApplyForm";
+import ProfileOfTheCompany from "./components/aboutUs/profileOfTheCompany";
+import TimeLine from "./components/aboutUs/timeLine";
+import Gallery from "./components/aboutUs/gallery";
 
 function App() {
     const router = createBrowserRouter([
@@ -42,8 +45,21 @@ function App() {
                     element: <OurTeam />,
                 },
                 {
-                    path: "/about-us",
                     element: <AboutUs />,
+                    children: [
+                        {
+                            path: "about-us",
+                            element: <ProfileOfTheCompany />,
+                        },
+                        {
+                            path: "timeline",
+                            element: <TimeLine />,
+                        },
+                        {
+                            path: "gallery",
+                            element: <Gallery />,
+                        },
+                    ],
                 },
                 {
                     path: "/service/mining",
