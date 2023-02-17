@@ -14,7 +14,7 @@ function Home() {
     return (
         <div>
             <Services />
-            {/* <InfoSection /> */}
+            <InfoSection />
             <Greeting />
             <ProjectSection />
             <BusinessFacts />
